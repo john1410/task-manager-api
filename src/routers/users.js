@@ -25,7 +25,7 @@ router.get('/users/me',auth ,async (req, res) => {
     res.send(req.user).status(200);
 });
 
-//update user by id
+//update user me
 router.patch('/users/me',auth,async (req,res)=>{
     //allowed item to update
     const allowedItems = ['name','email','password','age'];
